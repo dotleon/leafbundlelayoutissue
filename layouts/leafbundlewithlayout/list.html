@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<body>
+		<div class="main-page-wrapper">	
+			template: /layouts/leafbundlewithlayout/list.html
+			{{ .Content }}
+			<ul>
+				{{ range .Pages }}
+					<li>
+						{{ .Content }}
+					</li>
+				{{ end }}
+			</ul>
+		</div>	
+	</body>
+</html>
